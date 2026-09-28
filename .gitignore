@@ -1,0 +1,5 @@
+build/*
+images/*
+iso/*
+*.o
+*.log
