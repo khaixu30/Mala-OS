@@ -34,8 +34,11 @@ qemu-system-x86_64 \       # Run QEMU System x86_64 with sudo privileges
 
 The output is expected to be the line, you wrote in `write(1, "Hello, World! I'm Mala-OS, and this is my root process, PID 1.\n", 63);`. In short, it should print `"Hello, World! I'm Mala-OS, and this is my root process, PID 1."`.
 
+## 2. Filesystem
+Since linux follows Filesystem Hierarchy (FSH), so we need to create all the folders like `/bin`, `/sbin`, `/proc`, `/etc` etc.
+For that I wrote a `filesystem_setup.sh`, a shell script that needs fixing, but for now, it works, as the manual file system creation, which will be automated afterwards.
 
-## 2. Project Progress
+## Project Progress
 - [x] Development Environment
 - [x] Git Repository
 - [x] Linux kernel boot
