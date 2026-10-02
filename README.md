@@ -2,9 +2,11 @@
 A Linux-based distribution, working with Linux Kernel and GRUB under-the-hood.
 [*More information will be added as the project progresses.*]
 
-## 1. Current Progress
+## Current Progress
 
-### - First `init` application:
+### 1. Setup and `Hello` Message
+
+**First `init` application:**
 Currently, `init` doesn't do anything specific, other than printing a `hello message`.
 
 Execution commands:
@@ -34,20 +36,23 @@ qemu-system-x86_64 \       # Run QEMU System x86_64 with sudo privileges
 
 The output is expected to be the line, you wrote in `write(1, "Hello, World! I'm Mala-OS, and this is my root process, PID 1.\n", 63);`. In short, it should print `"Hello, World! I'm Mala-OS, and this is my root process, PID 1."`.
 
-## 2. Filesystem
+### 2. Filesystem
 Since linux follows Filesystem Hierarchy (FSH), so we need to create all the folders like `/bin`, `/sbin`, `/proc`, `/etc` etc.
 For that I wrote a `filesystem_setup.sh`, a shell script that needs fixing, but for now, it works, as the manual file system creation, which will be automated afterwards.
+
+### 3. Shell
+Since we need something to interact with the computer, shell is that layer, and we have started building it. Right now, we have a shell that only takes input and tokenize it and prints the tokens. There's no execution for now.
 
 ## Project Progress
 - [x] Development Environment
 - [x] Git Repository
 - [x] Linux kernel boot
 - [x] Basic Initramfs
-- [ ] Proper inital ram filesystem (initramfs)
+- [x] Proper inital ram filesystem (initramfs)
 - [ ] Shell
 - [ ] Core Utilities
 - [ ] Root filesystem
-
+- [ ] Automated filesystem creation
 
 [*Project is under work, will add more stuff and format documentation as we progress.*]
 
