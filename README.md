@@ -41,7 +41,7 @@ Since linux follows Filesystem Hierarchy (FSH), so we need to create all the fol
 For that I wrote a `filesystem_setup.sh`, a shell script that needs fixing, but for now, it works, as the manual file system creation, which will be automated afterwards.
 
 ### 3. Shell
-Since we need something to interact with the computer, shell is that layer, and we have started building it. Right now, we have a shell that only takes input and tokenize it and prints the tokens. There's no execution for now.
+Since we need something to interact with the computer, shell is that layer, and we have started building it. The shell is completely working on the host machine, now we just need to integrate it in the main system.
 
 ## Project Progress
 - [x] Development Environment
@@ -49,7 +49,7 @@ Since we need something to interact with the computer, shell is that layer, and 
 - [x] Linux kernel boot
 - [x] Basic Initramfs
 - [x] Proper inital ram filesystem (initramfs)
-- [ ] Shell
+- [x] Shell
 - [ ] Core Utilities
 - [ ] Root filesystem
 - [ ] Automated filesystem creation
